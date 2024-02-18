@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma Gourmandises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tout">
+    <!-- ACCUEIL -->
+ <div class="pageune"  id="accueil">
+    <nav class="nav">
+        <ul class="menu">
+          <a href="#accueil"><li>Accueil</li></a>
+            <a href="#presentation"><li>Présentation</li></a>
+           <a href="#favoris"> <li>Mes favoris</a>
+            <ul class="deroulant">
+             <a href="#pancakes"><li>Pancackes</li></a>
+             <a href="#brownie"><li>Brownie</li></a>
+             <a href="#cookies"><li>Cookies</li></a>
+             <a href="#muffins"><li>Muffins</li></a>
+             <a href="#gaufres"><li>Gaufres</li></a>
+            </ul></li>
+           <a href="#autres"><li>Recettes sucrées</li></a>
+            <a href="#contacts"><li>Contacts</li></a>
+        </ul>
+        <div class="menuburger" onclick="toggleSubMenu()">
+          <img src="img/burger-bar-marron.png" alt="">
+          <!-- Sous-menu du burger -->
+          <div class="submenu" id="submenu">
+            <a href="#accueil"><li>Accueil</li></a>
+              <a href="#presentation"><li>Présentation</li></a>
+              <a href="#favoris">
+                  <li>Mes favoris</li>
+                  <ul class="deroulant">
+                      <a href="#pancakes"><li>Pancackes</li></a>
+                      <a href="#brownie"><li>Brownie</li></a>
+                      <a href="#cookies"><li>Cookies</li></a>
+                      <a href="#muffins"><li>Muffins</li></a>
+                      <a href="#gaufres"><li>Gaufres</li></a>
+                  </ul>
+              </a>
+              <a href="#autres"><li>Recettes sucrées</li></a>
+              <a href="#contacts"><li>Contacts</li></a>
+          </div>
+      </div>
+    </nav>
+    <div class="logo"> <img class="imglogo" src="img/logoecf.png" alt=""></div>
+</div>
+<!-- PRESENTATION -->
+<div class="pagedeux" id="presentation">
+   <div class="titre"><h1>Qui suis-je ?</h1></div>
+ <div class="centre">
+   <div class="femme"><img src="img/pexels-streetwindy-2606030.jpg" alt=""></div>
+   <div class="presentation"><p>
+    Bienvenue sur mon petit coin gourmand ! Je suis passionnée de pâtisserie et sur mon blog, je partage avec vous mes recettes sucrées aussi délicieuses que faciles à réaliser. Je vous propose également un cotée Healthy afin de tous vous satisfaire. Des cookies moelleux aux gâteaux élégants en passant par des desserts gourmands pour toutes les occasions, chaque recette est pensée avec amour et créativité. Que vous soyez débutant ou amateur de douceurs, vous trouverez ici l'inspiration pour régaler vos papilles et impressionner vos proches.
+    </p></div>
+</div>
+    <div class="bonnedegustation"> <p>
+    Bonne dégustation !!!
+    </p></div>
+</div>
+
+<!-- MES FAVORIS -->
+<div class="pagetrois" id="favoris">
+    <div class="titre2"><h2>MES RECETTES FAVORITES</h2></div>
+    <div class="mesfav">
+        <div class="imgpancakes"> <a href="#pancakes">
+           <div><img src="img/lespancakes-removebg-preview.png" alt=""></div>
+           <div class="pancakesback"><img src="img/pancakesback-removebg-preview.png" alt=""></div>
+           <p>PANCAKES</p></a>
+       </div>
+        <div class="imgbrownie"><a href="#brownie"><img src="img/lebrownie-removebg-preview.png" alt="">
+         <div class="brownieback"><img src="img/brownieback-removebg-preview.png" alt=""></div> 
+          <p>BROWNIE</p></a>
+       </div>
+        <div class="imgcookies"><a href="#cookies"><img src="img/lescookies-removebg-preview.png" alt="">
+          <div class="cookiesback"><img src="img/cookiesback-removebg-preview.png" alt=""></div>
+          <p>COOKIES</p></a>
+       </div>
+        <div class="imgmuffins"><a href="#muffins"><img src="img/lesmuffins-removebg-preview.png" alt="">
+         <div class="muffinsback"><img src="img/Muffinsback-removebg-preview.png" alt=""></div> 
+          <p>MUFFINS</p></a>
+        </div>
+        <div class="imggaufres"><a href="#gzufres"><img src="img/lesgaufres-removebg-preview.png" alt="">
+          <div class="gaufresback"><img src="img/gaufresback-removebg-preview.png" alt=""></div>
+          <p>GAUFRES</p></a>
+       </div>
+    </div>
+</div>
+<!-- PANCAKES -->
+<div class="pagequatre" id="pancakes">
+    <div class="input1">
+      <div> NOMBRE DE PERSONNE : <input type="text"  id="nbPersonnes"> <button onclick="calculerQuantites()">Entrer</button></div>
+    </div>
+    <div class="recette1">
+        <div class="pancakes"><img src="img/pancakesnew-removebg-preview.png" alt=""></div>
+        <div class="ingredients1">
+           <ul id="listeIngredients">
+            <li> de farine</li>
+            <br>
+            <li>de levure chimique</li>
+            <br>
+            <li>de sucre</li>
+            <br>
+            <li>de beurre fondu</li>
+            <br>
+            <li>de lait</li>
+            <br>
+            <li>d'extrait de vanille</li>
+            <br>
+            <li>oeuf</li>
+             <br>
+            <li>pincée de sel</li>
+           </ul>
+        </div> 
+        <div class="preparation1">
+            <ol>
+                <li>Dans un grand bol, mélangez la farine, la levure chimique et une pincée de sel.</li>
+                <li>Dans un autre bol, battez l'œuf, puis ajoutez le sucre et mélangez bien jusqu'à obtenir une consistance homogène.</li>
+                <li>Ajoutez le beurre fondu au mélange d'œuf et de sucre, puis versez le lait et l'extrait de vanille. Mélangez bien.</li>
+                <li>Incorporez progressivement le mélange liquide au mélange sec (farine, levure, sel), en remuant doucement jusqu'à ce que la pâte soit lisse. Assurez-vous de ne pas trop mélanger pour éviter d'obtenir une pâte trop dense.</li>
+                <li>Préchauffez une poêle à feu moyen et graissez légèrement avec du beurre ou de l'huile.</li>
+                <li>Versez une petite quantité de pâte dans la poêle chaude pour former chaque pancake. Laissez cuire jusqu'à ce que des bulles apparaissent à la surface, puis retournez délicatement le pancake pour cuire l'autre côté.</li>
+            </ol>    
+        </div>
+    </div>
+</div>
+<!-- BROWNIE -->
+<div class="pagecinq" id="brownie">
+    <div class="input1">
+      <div > NOMBRE DE PERSONNE : <input type="text"  id="nbPersonnes2"> <button onclick="calculerQuantites2()">Entrer</button></div>
+      </div>
+      <div class="recette2">
+        <div class="preparation2">
+            <ol>
+                <li>Préchauffez votre four à 180 degrès.</li>
+                <li>Dans un bol, faites fondre le chocolat et le beurre au bain-marie ou au micro-ondes jusqu'à ce qu'ils soient bien lisses.</li>
+                <li>Ajoutez le sucre et mélangez bien.</li>
+                <li>Incorporez les œufs un par un, en mélangeant bien après chaque ajout.</li>
+                <li>Ajoutez la farine tamisée et mélangez jusqu'à ce que la pâte soit homogène.</li>
+                <li>Incorporez les noix ou les pépites de chocolat, si vous le souhaitez, pour ajouter de la texture et de la saveur.</li>
+                <li>Versez la pâte dans un moule préalablement beurré et fariné.</li>
+                <li>Faites cuire au four pendant 25 minutes ou jusqu'à ce qu'un cure-dent inséré au centre en ressorte avec des miettes humides, mais pas liquides.
+                    Laissez refroidir avant de couper le brownie en carrés. </li>
+            </ol>    
+        </div>
+          <div class="ingredients2">
+             <ul id="listeIngredients2">
+              <li>de chocolat noir</li>
+              <br>
+              <li>de beurre</li>
+              <br>
+              <li>de sucre</li>
+              <br>
+              <li>de farine</li>
+              <br>
+              <li>de lait</li>
+              <br>
+              <li>d'extrait de vanille</li>
+              <br>
+              <li>oeuf</li>
+               <br>
+              <li>pincée de sel</li>
+              <br>
+              <li>de noix ou de pépites de chocolat (facultatif)</li>
+             </ul>
+          </div>
+          
+        <div class="pancakes"><img src="img/brownie1-removebg-preview.png" alt=""></div>
+      </div>
+  </div>
+
+  <!-- COOKIES -->
+  <div class="pagesix" id="cookies">
+
+<div class="input1">
+  <div > NOMBRE DE PERSONNE : <input type="text"  id="nbPersonnes3"> <button onclick="calculerQuantites3()">Entrer</button></div>
+    </div>
+    <div class="recette3">
+        <div class="pancakes"><img src="img/cookies1-removebg-preview.png" alt=""></div>
+        <div class="ingredients3">
+           <ul id="listeIngredients3">
+            <li>de beurre ramolli</li>
+            <br>
+            <li>de sucre blanc</li>
+            <br>
+            <li>de sucre brun</li>
+            <br>
+            <li>de farine</li>
+            <br>
+            <li> de pépites de chocolat</li>
+            <br>
+            <li>d'extrait de vanille</li>
+            <br>
+            <li>de levure chimique</li>
+            <br>
+            <li>oeuf</li>
+             <br>
+            <li>pincée de sel</li>
+           </ul>
+        </div>
+        <div class="preparation3">
+            <ol>
+                <li>Préchauffez votre four à 180 degrès.</li>
+                <li>Dans un bol, battez le beurre ramolli avec le sucre blanc et le sucre brun jusqu'à obtention d'une texture crémeuse.</li>
+                <li>Ajoutez l'œuf en battant bien. Ajoutez ensuite l'extrait de vanille et mélangez.</li>
+                <li>Dans un autre bol, mélangez la farine, la levure chimique, le bicarbonate de soude et une pincée de sel.</li>
+                <li>Incorporez graduellement le mélange sec au mélange humide, en mélangeant jusqu'à ce que la pâte soit bien combinée..</li>
+                <li>Ajoutez les pépites de chocolat et mélangez-les uniformément dans la pâte.</li>
+                <li>Déposez des petites cuillerées de pâte sur une plaque de cuisson recouverte de papier sulfurisé. Laissez cuire 10 à 12 minutes</li>
+                <li>Laissez le cookie refroidir quelques minutes avant de le déguster.</li>
+            </ol>    
+        </div>
+    </div>
+  </div>
+  <!-- MUFFINS -->
+  <div class="pagesept" id="muffins">
+    <div class="input1">
+      <div > NOMBRE DE PERSONNE : <input type="text"  id="nbPersonnes4"> <button onclick="calculerQuantites4()">Entrer</button></div>
+      </div>
+      <div class="recette4">
+        <div class="preparation4">
+            <ol>
+                <li>Préchauffez votre four à 180 degrès.</li>
+                <li>Dans un bol, mélangez le beurre fondu avec le sucre jusqu'à ce que le mélange soit bien combiné.</li>
+                <li>Ajoutez l'œuf et mélangez bien.</li>
+                <li>Incorporer la farine, la levure chimique et une pincée de sel. Mélangez jusqu'à ce que la pâte soit homogène.</li>
+                <li>Ajoutez le lait et l'extrait de vanille, mélangez jusqu'à obtenir une pâte lisse</li>
+                <li>Si vous le souhaitez, ajoutez des fruits, des noix ou des pépites de chocolat et mélangez délicatement.</li>
+                <li>Répartissez la pâte dans un moule à muffins préalablement beurré ou utilisant des caissettes en papier.</li>
+                <li>Faites cuire au four pendant 25 minutes</li> 
+              <li>Laissez refroidir avant de démouler. </li>
+            </ol>    
+        </div>
+          <div class="ingredients4">
+             <ul id="listeIngredients4">
+              <li>de beurre fondu</li>
+              <br>
+              <li>de farine</li>
+              <br>
+              <li>de sucre</li>
+              <br>
+              <li>de levure chimique </li>
+              <br>
+              <li>de lait</li>
+              <br>
+              <li>d'extrait de vanille</li>
+              <br>
+              <li>oeuf</li>
+               <br>
+              <li>pincée de sel</li>
+              <br>
+              <li>de noix ou de pépites de chocolat (facultatif)</li>
+             </ul>
+          </div>
+          
+        <div class="pancakes"><img src="img/Muffins1-removebg-preview.png" alt=""></div>
+      </div>
+  </div>
+  <!-- GAUFRES -->
+  <div class="pagehuit" id="gaufres">
+    <div class="input1">
+      <div> NOMBRE DE PERSONNE : <input type="text"  id="nbPersonnes5"> <button onclick="calculerQuantites5()">Entrer</button></div>
+      </div>
+      <div class="recette5">
+          <div class="gaufres"><img src="img/gaufresnew-removebg-preview.png" alt=""></div>
+          <div class="ingredients5">
+             <ul id="listeIngredients5">
+              <li>de farine</li>
+              <br>
+              <li>de levure chimique</li>
+              <br>
+              <li>de sucre</li>
+              <br>
+              <li>de beurre fondu</li>
+              <br>
+              <li>de lait</li>
+              <br>
+              <li>d'extrait de vanille</li>
+              <br>
+              <li>oeuf</li>
+               <br>
+              <li>pincée de sel</li>
+             </ul>
+          </div>
+          <div class="preparation5">
+              <ol>
+                  <li>Dans un bol, mélangez la farine, la levure chimique, le sel et le sucre.</li>
+                  <li>Dans un autre bol, battez l'œuf, puis ajoutez le lait, le beurre fondu et l'extrait de vanille. Mélangez bien.</li>
+                  <li>Incorporez le mélange liquide au mélange sec, en remuant jusqu'à ce que la pâte soit homogène.</li>
+                  <li>Versez la pâte dans le gaufrier préchauffé et faites cuire selon les instructions de votre appareil.</li>
+                  <li>Une fois cuites, retirez les gaufres du gaufrier et servez-les chaudes.</li>
+              </ol>    
+          </div>
+  </div>
+  <!-- AUTRES RECETTES -->
+  <!-- <div class="pageneuf" id="autres">
+    <div class="titrerecette"> <h2>Quelques une de mes recettes sucrées </h2></div>
+     <div class="carrousel">
+      <div class="container"  id="imageContainer">
+        <img src="img/im1.png" alt="Image 1" >
+        <img src="img/im2.png" alt="Image 2" >
+        <img src="img/im3.png" alt="Image 3" >
+        <img src="img/im4.png" alt="Image 4" >
+        <img src="img/im5.png" alt="Image 5" >
+        <img src="img/im6.png" alt="Image 6" >
+        <img src="img/im7.png" alt="Image 7" >
+        <img src="img/im8.png" alt="Image 8" >
+        
+      </div>
+      <img src="img/right-arrow.png" class="fleche" id="g" alt="">
+      <img src="img/right-arrow.png" class="fleche" id="d" alt="">
+     </div>
+
+  </div> -->
+  <!-- CONTACTS -->
+  <div class="pagedix" id="contacts">
+  
+    <div class="total">
+        <h2 class="contacter">N'hésitez pas à me contacter</h2>
+        <br>
+
+         <div class="remerciement"><p class="contacter2">
+            Un grand merci pour votre visite sur mon blog de recettes sucrées ! 
+            J'espère que mes recettes ont su égayer vos papilles à vous et à vos proches.
+            N'hésitez pas à me contacter pour toute question, suggestion ou simplement pour partager vos propres aventures culinaires.
+            À Bientôt!
+        </p></div>
+     <div class="RS">
+         <div class="box"> 
+          <div class="icon"><img src="img/instagram.png" alt=""></div>
+          <div class="mon"><h3>Asma.gourmandises</h3></div>
+        </div>  
+        <div class="box">
+          <div class="icon"><img src="img/facebook-2.png" alt=""></div>
+          <div class="mon"><h3>Asma Gourmandises</h3></div>
+        </div> 
+        <div class="box">
+          <div class="icon"><img src="img/snapchat-2.png" alt=""></div>
+          <div class="mon"><h3>asma.gourmandises</h3></div>
+        </div> 
+        <div class="box">
+          <div class="icon"><img src="img/email.png" alt=""></div>
+          <div class="mon"><h3>chbasmaa@gmail.com</h3></div>
+        </div>    
+    </div>
+    </div>
+     
+  </div>
+     <!-- PIED DE PAGE -->
+     <div class="footer">
+      <p>© 2024 Asma Gourmandises - Tous droits réservés</p>
+  </div>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
