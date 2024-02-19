@@ -767,7 +767,7 @@ button{
     background-color: #ffffff55; /* Couleur de fond du sous-menu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
     z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
-   margin-left: 54%;
+   margin-left: 60%;
     top: 7vh;
 
    
