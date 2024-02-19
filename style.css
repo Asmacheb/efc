@@ -764,19 +764,28 @@ button{
 .submenu {
     display: none;
     position: absolute;
-    background-color: #ffffff55; /* Couleur de fond du sous-menu */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
-   margin-left: 60%;
-    top: 7vh;
+    background-color: #ffffff55; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+   margin-left: 58%;
+    top: 7vh;   
+} 
 
-   
-    
-}
+/* .submenu {
+    display: none;
+    position: fixed; 
+    background-color: #ffffff55;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    top: 5vh; 
+    right: 10px;
+} */
+
 .submenu li{
     text-decoration: none;
     color: #5B2406;
     list-style: none;
+    /* margin-right: 35vw; */
+    
 
 }
 .submenu.show {
@@ -989,7 +998,7 @@ button{
         text-align: center;
     }
     .mesfav img{
-        height: 20vh;  
+        height: 17vh;  
         display: flex;
         flex-direction: column;
        
@@ -1687,15 +1696,18 @@ button{
  .icon {
     margin-right: 2vw; 
     background-color: rgba(0, 0, 0, 0.315);
-   width: 30vw;
+   width: 35vw;
    height: 9vh;
+   
+
  
   }
   .RS{height: 80vh;
     margin-top: -25px;
-margin-left: -570px;
+   margin-left: -570px;
     display: flex;
     flex-direction: column;
+    padding: 5%;
   }
   .icon img{
     height: 50px;
@@ -1707,7 +1719,7 @@ margin-left: -570px;
    
      }
 .box{
-    margin-top: 25px;
+    margin-top: 55px;
     height: 55px;
     width: 70px;
   
@@ -1717,7 +1729,7 @@ margin-left: -570px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 30vw;
+    width: 35vw;
    height: 9vh;
     background: #5B2406;
     transition: 0.5s;
@@ -1729,7 +1741,7 @@ margin-left: -570px;
     margin-top: 2vh;
     padding: 0%;
     list-style: 100px;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: 500;
     color: white;
     
