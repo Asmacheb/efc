@@ -699,9 +699,9 @@ button{
 
 /* PAGE D'ACCUEIL - RESPONSIVE */
 
-/* FORMAT TABLETTE (767px - 1023px) */
+/* FORMAT TABLETTE (767px - 102>5px) */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1025px) {
 
     .pageune {
         background-image: url(img/accueilimg.png);
@@ -716,8 +716,6 @@ button{
   
  
     .nav {
-      
-
     color: #5B2406;
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
@@ -747,7 +745,6 @@ button{
      position: absolute;
     top: 49vh;
     left: 52vw;
-   
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -767,7 +764,7 @@ button{
     background-color: #ffffff55; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     z-index: 1;
-   margin-left: 58%;
+    margin-left: 57%;
     top: 7vh;   
 } 
 
@@ -826,6 +823,7 @@ button{
 
     ul li {
         display: none;
+        font-size: medium;
     }
 
     .menuburger {
@@ -855,7 +853,7 @@ button{
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     z-index: 1; 
-    margin-right: 58px;
+    margin-right: 35vw;
     position: absolute;
     top: 5vh;
     transform: translateX(97%);
@@ -865,6 +863,8 @@ button{
     text-decoration: none;
     color: #5B2406;
     list-style: none;
+
+   
 }
 .submenu.show {
     display: block;
@@ -967,7 +967,7 @@ button{
 /* FAVORIS */
 /* FORMAT TABLETTE (767px - 1023px) */
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
  
     
     a{
@@ -1072,7 +1072,7 @@ button{
 
 /* PANCAKES */
 /* FORMAT TABLETTE (767px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
    
     .input1 {
         width: 80vw;
@@ -1174,7 +1174,7 @@ button{
 /* BROWNIE */
 /* FORMAT TABLETTE (767px - 1023px) */
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
  
     .input1 {
         width: 80vw;
@@ -1264,7 +1264,7 @@ button{
 
 /* COOKIES */
 /* FORMAT TABLETTE (767px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
    
     .input1 {
         width: 80vw;
@@ -1357,7 +1357,7 @@ button{
 }
 /* MUFFINS */
 /* FORMAT TABLETTE (767px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
     .input1 {
         width: 80vw;
         margin: 0 auto;
@@ -1440,7 +1440,7 @@ button{
 
 /* GAUFRES */
 /* FORMAT TABLETTE (767px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
    
     .input1 {
         width: 80vw;
