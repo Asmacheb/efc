@@ -219,7 +219,7 @@ a{
    
 }
 .mesfav{
-    margin-left: 5vh;
+    margin-left: 8vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -230,7 +230,7 @@ a{
 
 }
 .mesfav img{
-    height: 50vh;  
+    height: 45vh;  
    
 }
 .mesfav p{
